@@ -29,7 +29,11 @@ class NewsListBloc extends Bloc<NewsListEvent, NewsListState> {
           articles = await repository.fetchTopHeadLines();
         }
 
-        yield NewsListLoaded(articles: articles);
+        if (articles.isEmpty) {
+          yield NewsListEmpty();
+        } else {
+          yield NewsListLoaded(articles: articles);
+        }
       } catch (_) {
         yield NewsListError();
       }
