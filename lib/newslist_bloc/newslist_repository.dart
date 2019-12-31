@@ -4,7 +4,7 @@ import 'package:flutter_newsapiorg/constants/constants.dart';
 import 'package:flutter_newsapiorg/models/article_model.dart';
 import 'package:http/http.dart' as http;
 
-class WebService {
+class NewsListRepository {
   Future<List<Article>> fetchTopHeadLinesByKeyword({String keyword}) async {
     print('fetchTopHeadLines');
     String url = Constants.headLinesByKeywordURL(keyword: keyword);

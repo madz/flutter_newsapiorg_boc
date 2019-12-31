@@ -1,12 +1,12 @@
 import 'dart:async';
 import 'package:bloc/bloc.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter_newsapiorg/newslist_bloc/newslist_repository.dart';
 import '../models/article_model.dart';
-import '../services/webservice.dart';
 import './bloc.dart';
 
 class NewsListBloc extends Bloc<NewsListEvent, NewsListState> {
-  final WebService repository;
+  final NewsListRepository repository;
 
   NewsListBloc({@required this.repository}) : assert(repository != null);
 

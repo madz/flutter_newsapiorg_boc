@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_newsapiorg/bloc/news_list_bloc.dart';
-import 'package:flutter_newsapiorg/bloc/news_list_event.dart';
-import 'package:flutter_newsapiorg/bloc/news_list_state.dart';
+import 'package:flutter_newsapiorg/newslist_bloc/bloc.dart';
 import 'package:flutter_newsapiorg/models/article_model.dart';
 import 'package:flutter_newsapiorg/screen/news_article_detail_screen.dart';
 import 'package:flutter_newsapiorg/widgets/news_list_widget.dart';
