@@ -1,0 +1,15 @@
+import 'package:equatable/equatable.dart';
+import 'package:flutter/foundation.dart';
+
+abstract class NewsListEvent extends Equatable {
+  const NewsListEvent();
+}
+
+class FetchNewsList extends NewsListEvent {
+  final String search;
+
+  const FetchNewsList({this.search});
+
+  @override
+  List<Object> get props => [search];
+}
